@@ -22,10 +22,9 @@ def api_hash():
     content = request.json
     print(content)
 
-   
     #res = json.loads(content)
     #print(res)
-    print(request.json()[0]['projectKey'])
+    #print(request.json()[0]['projectKey'])
     return jsonify({'hash': hash('thedarkdog.attlasian.net')})
 
 
