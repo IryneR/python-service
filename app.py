@@ -21,12 +21,12 @@ def api_hash():
     #content = request.json
     content = request.json
     print(content)
-    return jsonify({'hash': hash('thedarkdog.attlasian.net')})
-    #print content
-#hash for issue object
-      #return jsonify({'hash': hash('thedarkdog.attlasian.net')})
-    res = json.loads(content)
 
-#обработка случая, когда послан не json
+   
+    #res = json.loads(content)
+    #print(res)
+    print(request.json()[0]['projectKey'])
+    return jsonify({'hash': hash('thedarkdog.attlasian.net')})
+
 
 app.run()
