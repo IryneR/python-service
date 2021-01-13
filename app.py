@@ -20,5 +20,5 @@ def api_hash():
 
     return jsonify({'hash': hash(str(content))})
 
-
+  
 app.run()
