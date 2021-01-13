@@ -1,3 +1,5 @@
+import time
+
 from flask import Flask, jsonify, request, json
 
 app = Flask(__name__)
@@ -17,7 +19,7 @@ def api_hash():
     #keyString = content["projectKey"]+content["issueTypeName"]+content["creatorDisplayName"]+content["key"]
     #print(keyString)
     #return jsonify({'hash': hash(keyString)})
-
+    time.sleep(20)
     return jsonify({'hash': hash(str(content))})
 
   
